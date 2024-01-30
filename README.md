@@ -30,6 +30,8 @@ Now in the backend folder. Run the start
 
 The backend is now up and running.
 
+You will also need to run `docker-compose up` to get the MongoDB database up and running.
+
 ---
 
 ## Frontend
