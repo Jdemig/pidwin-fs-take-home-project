@@ -10,7 +10,7 @@ export const styles = {
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: "#5e5d5c",
+    backgroundColor: theme.palette.primary.main,
   },
   form: {
     width: "100%",

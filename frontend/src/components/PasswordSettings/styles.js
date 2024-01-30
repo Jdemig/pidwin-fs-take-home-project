@@ -10,16 +10,16 @@ export const styles = {
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: "#5e5d5c",
+    backgroundColor: theme.palette.primary.main,
   },
   form: {
     width: "100%",
     marginTop: theme.spacing(3),
   },
   submit: {
-    margin: theme.spacing(3, 1, 2),
+    margin: theme.spacing(3, 0, 2),
   },
   typo: {
-    margin: theme.spacing(3, 3, 2),
+    margin: theme.spacing(4, 2, 1),
   },
 };

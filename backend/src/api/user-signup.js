@@ -16,17 +16,21 @@ const signup = async (req, res) => {
     }
 
     const hashedPassword = await bcrypt.hash(password, 12);
+
     const result = await User.create({
       email,
       password: hashedPassword,
       name: `${firstName} ${lastName}`,
+      tokens: 100,
+      winStreak: 0,
     });
+
     const token = jwt.sign(
       {
         _id: result._id,
         name: result.name,
         email: result.email,
-        password: result.hashedPassword,
+        tokens: result.tokens,
       },
       "test",
       { expiresIn: "1h" }
@@ -35,7 +39,6 @@ const signup = async (req, res) => {
     res.status(200).json({ token });
   } catch (error) {
     res.status(500).json({ message: "Something went wrong" });
-    console.log(error);
   }
 };
 

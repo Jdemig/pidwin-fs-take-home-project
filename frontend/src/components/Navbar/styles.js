@@ -1,6 +1,6 @@
 import { theme } from "../../themes/Default";
 
-import { deepPurple } from "@mui/material/colors";
+import { deepPurple, blue } from "@mui/material/colors";
 
 export const styles = {
   appBar: {
@@ -29,6 +29,7 @@ export const styles = {
   userName: {
     display: "flex",
     alignItems: "center",
+    marginLeft: '8px',
   },
   brandContainer: {
     display: "flex",
@@ -38,4 +39,8 @@ export const styles = {
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
   },
+  colorful: {
+    color: theme.palette.getContrastText(theme.palette.primary.main),
+    backgroundColor: theme.palette.primary.main,
+  }
 };

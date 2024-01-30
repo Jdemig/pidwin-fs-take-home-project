@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import {Route, BrowserRouter, Routes, useNavigate, useLocation} from "react-router-dom";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
