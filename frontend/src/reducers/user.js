@@ -1,6 +1,5 @@
-import {COIN_TOSS, GET_USER, LOGIN, LOGOUT, SET_USER} from '../constants/actionTypes';
+import {COIN_TOSS, LOGIN, LOGOUT, SET_USER} from '../constants/actionTypes';
 import {jwtDecode} from "jwt-decode";
-
 
 
 const initialState = {

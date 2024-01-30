@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import {Box, Button, Container, Typography} from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Input from "../Login/Input";
-import {styles} from "../Login/styles";
-import {useDispatch} from "react-redux";
-import {coinToss} from "../../actions/user";
+import { styles } from "../Login/styles";
+import { useDispatch } from "react-redux";
+import { coinToss } from "../../actions/user";
 
 
 const GUESS_TYPE = {
@@ -11,11 +11,11 @@ const GUESS_TYPE = {
   tails: 'tails',
 };
 
-
 const formDataInitVal = {
   guess: GUESS_TYPE.heads,
   amount: 0,
 };
+
 
 const CoinToss = () => {
   const [formData, setFormData] = useState(formDataInitVal);

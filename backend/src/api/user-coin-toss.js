@@ -1,11 +1,9 @@
 import User from "../models/user.js";
-import jwt from "jsonwebtoken";
 
 const COIN_TOSS_RESULT = {
   heads: 'heads',
   tails: 'tails',
 };
-
 
 
 const coinToss = async (req, res) => {

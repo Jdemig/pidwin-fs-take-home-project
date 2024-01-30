@@ -20,7 +20,6 @@ const PasswordSetting = () => {
   const user = useSelector(state => state.user.user);
   const isLoggedIn = !!user;
 
-
   const history = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [changeFormData, setChangeFormData] = useState({

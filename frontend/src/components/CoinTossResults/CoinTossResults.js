@@ -37,7 +37,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 
-
 const CoinTossResults = () => {
   const results = useSelector(state => state.user.results);
 

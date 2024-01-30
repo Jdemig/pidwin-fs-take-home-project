@@ -7,16 +7,14 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Tooltip from '@mui/material/Tooltip';
-import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
-import {useState} from "react";
-import {styles} from "../Navbar/styles";
-import {useNavigate} from "react-router-dom";
+import { useState } from "react";
+import { styles } from "../Navbar/styles";
+import { useNavigate } from "react-router-dom";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import * as actionType from "../../constants/actionTypes";
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function AccountMenu() {
   const dispatch = useDispatch();

@@ -1,6 +1,6 @@
 import { theme } from "../../themes/Default";
 
-import { deepPurple, blue } from "@mui/material/colors";
+import { deepPurple } from "@mui/material/colors";
 
 export const styles = {
   appBar: {

@@ -1,6 +1,5 @@
 import React from "react";
 import {Box, Container, Grow, Paper, Typography} from "@mui/material";
-import { jwtDecode } from "jwt-decode";
 import CoinToss from "../CoinToss/CoinToss";
 import {useSelector} from "react-redux";
 import CoinTossResults from "../CoinTossResults/CoinTossResults";

@@ -8,10 +8,9 @@ import {
   Typography,
 } from "@mui/material";
 import Input from "./Input";
-import { jwtDecode } from "jwt-decode";
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import {login, signup, user} from "../../actions/user";
+import { login, signup } from "../../actions/user";
 import LockIcon from "@mui/icons-material/LockOutlined";
 import { styles } from "./styles";
 
