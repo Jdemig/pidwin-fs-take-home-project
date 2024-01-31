@@ -31,6 +31,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
+    console.log(user);
     if (user !== null) {
       if (user.exp * 1000 < new Date().getTime()) logout();
     }
@@ -63,11 +64,10 @@ const Navbar = () => {
             </Box>
 
             <AccountMenu />
-
-
           </Box>
         ) : (
           <Button
+            component={Link}
             to="/auth"
             variant="contained"
             color="primary"
