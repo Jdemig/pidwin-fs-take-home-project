@@ -61,10 +61,10 @@ const CoinTossResults = () => {
           <TableBody>
             {results.length ? (
               <>
-                {results.reverse().slice(0, 10).map((result, idx) => (
-                  <StyledTableRow key={result.name}>
+                {results.toReversed().slice(0, 10).map((result, idx) => (
+                  <StyledTableRow key={results.length - idx}>
                     <StyledTableCell component="th" scope="row">
-                      #{results.length - idx}
+                      #{result.number}
                     </StyledTableCell>
                     <StyledTableCell align="right">{result.amount} Pidz</StyledTableCell>
                     <StyledTableCell align="right">{result.winAmount} Pidz</StyledTableCell>

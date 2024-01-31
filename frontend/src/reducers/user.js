@@ -6,6 +6,7 @@ const initialState = {
   token: null,
   user: null,
   results: [],
+  resultNumber: 0,
 };
 
 
@@ -27,6 +28,8 @@ const loginReducer = (state = initialState, action) => {
 
 
     case COIN_TOSS:
+      state.resultNumber += 1;
+      action.data.number = state.resultNumber;
       state.results.push(action.data);
       return { ...state, user: action.data.user };
 
