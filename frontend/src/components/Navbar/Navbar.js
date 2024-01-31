@@ -8,11 +8,11 @@ import {
 
 } from "@mui/material";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import {useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import * as actionType from "../../constants/actionTypes";
 import { styles } from "./styles";
 import AccountMenu from "../AccountMenu/AccountMenu";
-import {getUser} from "../../actions/user";
+import { getUser } from "../../actions/user";
 
 const Navbar = () => {
   const user = useSelector(state => state.user.user);
