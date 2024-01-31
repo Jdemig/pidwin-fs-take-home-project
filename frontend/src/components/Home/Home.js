@@ -1,7 +1,7 @@
 import React from "react";
-import {Box, Container, Grow, Paper, Typography} from "@mui/material";
+import { Box, Container, Grow, Paper, Typography } from "@mui/material";
 import CoinToss from "../CoinToss/CoinToss";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 import CoinTossResults from "../CoinTossResults/CoinTossResults";
 
 const Home = () => {

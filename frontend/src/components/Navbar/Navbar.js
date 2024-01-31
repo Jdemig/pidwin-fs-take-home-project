@@ -5,7 +5,6 @@ import {
   Toolbar,
   Button,
   Box,
-
 } from "@mui/material";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -31,7 +30,6 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    console.log(user);
     if (user !== null) {
       if (user.exp * 1000 < new Date().getTime()) logout();
     }
